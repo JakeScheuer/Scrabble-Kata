@@ -13,9 +13,15 @@ public class Scrabble {
     }
 
     private void getWordValue(String word) {
-        for(int i = 0; i < word.length() ; i++) {
-            score += getTileValue(word.toUpperCase().charAt(i));
+
+        if (word.length() >= 2 && word.length() <= 15){
+
+            for(int i = 0; i < word.length() ; i++) {
+                score += getTileValue(word.toUpperCase().charAt(i));
+            }
+            
         }
+
     }
 
     public Integer getTileValue(Character tile){

@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/codingdojo/Scrabble.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            <state relative-caret-position="315">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/codingdojo/ScrabbleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+            <state relative-caret-position="516">
+              <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +56,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/codingdojo/Scrabble.java" />
         <option value="$PROJECT_DIR$/src/test/java/codingdojo/ScrabbleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/codingdojo/Scrabble.java" />
       </list>
     </option>
   </component>
@@ -135,7 +135,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551285306587" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551285607388" />
     <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
   </component>
   <component name="RunDashboard">
@@ -186,12 +186,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ScrabbleTest - 2019.02.27 at 11h 05m 48s.xml">
-      <configuration name="ScrabbleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScrabbleTest - 2019.02.27 at 11h 08m 45s.xml">
-      <configuration name="ScrabbleTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ScrabbleTest - 2019.02.27 at 11h 09m 59s.xml">
       <configuration name="ScrabbleTest" configurationId="JUnit" />
     </history-entry>
@@ -211,6 +205,15 @@
       <configuration name="ScrabbleTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ScrabbleTest - 2019.02.27 at 11h 32m 51s.xml">
+      <configuration name="ScrabbleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScrabbleTest - 2019.02.27 at 11h 35m 08s.xml">
+      <configuration name="ScrabbleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScrabbleTest - 2019.02.27 at 11h 38m 22s.xml">
+      <configuration name="ScrabbleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScrabbleTest - 2019.02.27 at 11h 39m 57s.xml">
       <configuration name="ScrabbleTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -264,20 +267,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/codingdojo/Scrabble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/codingdojo/ScrabbleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        <state relative-caret-position="516">
+          <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codingdojo/Scrabble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>

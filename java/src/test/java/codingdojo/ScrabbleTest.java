@@ -34,4 +34,13 @@ public class ScrabbleTest
         assertEquals((Integer) 6, scoreOfWord);
 
     }
+
+    @Test
+    public void whenCalculateIsPassedAOneLetterWordReturns0() {
+
+        Integer scoreOfWord = scrabble.calculate("a");
+
+        assertEquals((Integer) 0, scoreOfWord);
+
+    }
 }
