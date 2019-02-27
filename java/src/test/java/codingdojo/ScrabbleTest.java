@@ -17,21 +17,21 @@ public class ScrabbleTest
 
     }
 
-//    @Test
-//    public void whenCalculateIsPassedAStringReturnsFirstLetter() {
-//
-//        Character firstLetter = scrabble.calculate("foo");
-//
-//        assertEquals((Character)'F', firstLetter);
-//
-//    }
-
     @Test
-    public void whenCalculateIsPassedAStringReturnsScoreOfFirstLetter() {
+    public void whenGetTileIsPassedACharacterReturnsItsValue() {
 
-        Integer firstLetterScore = scrabble.calculate("foo");
+        Integer firstLetterScore = scrabble.getTileValue((Character)'F');
 
         assertEquals((Integer)4, firstLetterScore);
+
+    }
+
+    @Test
+    public void whenCalculateIsPassedAWordReturnsTotalScoreOfTheWord() {
+
+        Integer scoreOfWord = scrabble.calculate("foo");
+
+        assertEquals((Integer) 6, scoreOfWord);
 
     }
 }
