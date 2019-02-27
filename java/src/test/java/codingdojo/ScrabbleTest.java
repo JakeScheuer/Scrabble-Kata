@@ -20,7 +20,10 @@ public class ScrabbleTest
     @Test
     public void whenGetTileIsPassedACharacterReturnsItsValue() {
 
-        Integer firstLetterScore = scrabble.getTileValue((Character)'F');
+        Word word = new Word('A', 1, "foo", true);
+
+
+        Integer firstLetterScore = word.getTileValue((Character)'F');
 
         assertEquals((Integer)4, firstLetterScore);
 
@@ -29,7 +32,9 @@ public class ScrabbleTest
     @Test
     public void whenCalculateIsPassedAWordReturnsTotalScoreOfTheWord() {
 
-        Integer scoreOfWord = scrabble.calculate("foo");
+        Word word = new Word('A', 1, "foo", true);
+
+        Integer scoreOfWord = scrabble.calculate(word);
 
         assertEquals((Integer) 6, scoreOfWord);
 
@@ -38,9 +43,31 @@ public class ScrabbleTest
     @Test
     public void whenCalculateIsPassedAOneLetterWordReturns0() {
 
-        Integer scoreOfWord = scrabble.calculate("a");
+        Word word = new Word('A', 1, "a", true);
+
+        Integer scoreOfWord = scrabble.calculate(word);
 
         assertEquals((Integer) 0, scoreOfWord);
+
+    }
+
+    @Test
+    public void whenCalculateIsPassedAWordLargerThan15Returns0() {
+
+        Word word = new Word('A', 1, "icannotthinkofone", true);
+
+        Integer scoreOfWord = scrabble.calculate(word);
+
+        assertEquals((Integer) 0, scoreOfWord);
+
+    }
+
+    @Test
+    public void whenGetStartingPositionIsCalledReturnsFormattedStartingPosition() {
+
+        Word word = new Word('A', 1, "hello", true);
+
+        assertEquals("A,1", word.getStartingPosition());
 
     }
 }
