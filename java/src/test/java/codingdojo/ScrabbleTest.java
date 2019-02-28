@@ -5,6 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class ScrabbleTest
 {
@@ -70,4 +73,35 @@ public class ScrabbleTest
         assertEquals("A,1", word.getStartingPosition());
 
     }
+
+    @Test
+    public void whenPlayWordHorizontalIsCalledAListOfCoordinatesIsGenerated() {
+        Word word = new Word('A', 1, "hello", false);
+
+        List<String> actualCoordinates = word.playWordHorizontal();
+        List<String> expectedCoordinates = new ArrayList<String>(){{
+            add("A,1");
+            add("B,1");
+            add("C,1");
+            add("D,1");
+            add("E,1");
+        }};
+        assertEquals(expectedCoordinates, actualCoordinates);
+    }
+
+    @Test
+    public void whenPlayWordVerticalIsCalledAListOfCoordinatesIsGenerated() {
+        Word word = new Word('A', 1, "hello", true);
+
+        List<String> actualCoordinates = word.playWordVertical();
+        List<String> expectedCoordinates = new ArrayList<String>(){{
+            add("A,1");
+            add("A,2");
+            add("A,3");
+            add("A,4");
+            add("A,5");
+        }};
+        assertEquals(expectedCoordinates, actualCoordinates);
+    }
+
 }

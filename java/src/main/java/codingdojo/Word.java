@@ -1,5 +1,8 @@
 package codingdojo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Word {
 
     private Character column;
@@ -41,5 +44,39 @@ public class Word {
 
         return ScrabbleData.Tiles.get(tile);
 
+    }
+
+    public List<String> playWordHorizontal() {
+
+        List<String> coordinates = new ArrayList<String>();
+
+        int valueOfFirstColumn = getStartingPosition().charAt(0);
+
+        for (int i = 0; i < word.length(); i++) {
+
+            String nextColumnLetter = String.valueOf((char) (valueOfFirstColumn + i));
+
+            String nextCoordinate = nextColumnLetter+","+row;
+
+            coordinates.add(nextCoordinate);
+
+        }
+
+        return coordinates;
+    }
+
+    public List<String> playWordVertical() {
+
+        List<String> coordinates = new ArrayList<String>();
+
+        for (int i = 0; i < word.length(); i++) {
+
+            String nextCoordinate = column+","+(row+i);
+
+            coordinates.add(nextCoordinate);
+
+        }
+
+        return coordinates;
     }
 }
